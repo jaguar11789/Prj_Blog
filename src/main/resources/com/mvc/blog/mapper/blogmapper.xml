@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mvc.blog.dao.BlogDao">
+	<select id="selectList" resultType="com.mvc.blog.dto.Blog_BoardDto">
+		SELECT BLOG_NO, BLOG_WRITER, BLOG_NUM, BLOG_TITLE, BLOG_CONTENT, BLOG_IMAGE, BLOG_DATE, BLOG_HIT
+		FROM BLOG_BOARD
+	</select>
+	
+	<select id="selectOne" resultType="com.mvc.blog.dto.Blog_BoardDto">
+		SELECT BLOG_NO, BLOG_WRITER, BLOG_NUM, BLOG_TITLE, BLOG_CONTENT, BLOG_IMAGE, BLOG_DATE, BLOG_HIT
+		FROM BLOG_BOARD
+		WHERE BLOG_NO = #{BLOG_NO}
+	</select>
+	
+	<insert id="boardWrite">
+		INSERT INTO BLOG_BOARD VALUES
+		(NEXTVAL('blogNo_seq'), #{blog_writer}, 1,#{blog_title}, #{blog_content}, null, NOW(), 0);
+	</insert>
+	<!-- <update id="boardUpdate" parameterType="Blog_BoardDto">
+		UPDATE BLOG_BOARD
+		SET BLOG_TITLE=#{blog_title}, BLOG_CONTENT=#{blog_content} WHERE BLOG_NO=#{blog_no}
+	</update> -->
+</mapper>

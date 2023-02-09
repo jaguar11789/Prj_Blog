@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+#logo {
+	/* border: 5px solid pink; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	margin-top: 50px;
+}
+
+#joinform {
+	/* border: 5px solid greenyellow; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div {
+	padding: 10px;
+	/* border: 5px solid gray; */
+}
+
+a {
+	margin: 0px;
+	padding: 0px;
+	/* border-bottom: 1px solid black; */
+}
+
+.input_value {
+	width: 19rem;
+	height: 2rem;
+	border: 2px solid lightgray;
+	border-radius: 5px;
+	color: gray;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.input_value_code {
+	width: 12.5rem;
+	height: 1.8rem;
+	border: 2px solid lightgray;
+	border-radius: 5px;
+	color: gray;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.input_label {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bold;
+	color: rgb(73, 69, 69);
+	font-size: small;
+}
+
+.input_button_join {
+	margin-top: 0.5em;
+	border: none;
+	border-radius: 3px;
+	background-color: purple;
+	width: 19.5rem;
+	height: 40px;
+	color: white;
+	cursor: pointer;
+}
+
+.input_button_code {
+	border: none;
+	border-radius: 3px;
+	background-color: orange;
+	width: 6rem;
+	height: 30px;
+	color: white;
+	cursor: pointer;
+}
+
+.id_ok, .nickname_ok, .pwd_ok {
+	color: #6A82FB;
+	display: none;
+}
+
+.id_already, .nickname_already, .pwd_no {
+	color: red;
+	display: none;
+}
+
+#msg {
+	margin-left: 60px;
+	color: red;
+	font-size: 13px;
+	font-weight: bold;
+}

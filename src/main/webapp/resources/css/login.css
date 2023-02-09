@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+#grid {
+	margin-top: 10%;
+}
+
+#logo {
+	/* border: 5px solid pink; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	margin-top: 60px;
+	padding: 20px;
+}
+
+#loginformdiv {
+	/* border: 5px solid greenyellow; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+}
+
+#a_container {
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+	font-size: small;
+	margin: 0;
+	/* border: 1px solid red; */
+}
+
+#a_container2 {
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+	font-size: small;
+	margin: 0;
+	margin-top: 20px;
+	/* border: 1px solid red; */
+}
+
+.find_id {
+	margin: 0;
+	padding-right: 15px;
+	color: gray;
+}
+
+.find_pw {
+	margin: 0;
+	color: gray;
+}
+
+.do_join {
+	padding-left: 105px;
+	color: gray;
+}
+
+.business_login {
+	color: blue;
+}
+
+.input_value {
+	width: 19rem;
+	height: 2rem;
+	border: 2px solid lightgray;
+	border-radius: 5px;
+	color: gray;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.input_label {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bold;
+	color: rgb(73, 69, 69);
+	font-size: small;
+}
+
+.input_button_login {
+	margin-top: 0.5em;
+	border: none;
+	border-radius: 3px;
+	background-color: purple;
+	width: 19.5rem;
+	height: 40px;
+	color: white;
+	cursor: pointer;
+}
+
+#msg {
+	margin-left: 60px;
+	color: red;
+	font-weight: bold;
+}

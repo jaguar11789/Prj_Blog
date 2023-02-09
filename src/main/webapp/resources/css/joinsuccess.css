@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#grid {
+	margin-top: 7%;
+}
+
+div {
+	padding: 10px;
+	/* border: 5px solid gray; */
+}
+
+#logo {
+	/* border: 5px solid pink; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 20px;
+	margin-top: 50px;
+}
+
+#button_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.p1 {
+	padding-top: 30px;
+	width: 500px;
+	text-align: center;
+}
+
+.p2 {
+	padding-bottom: 30px;
+	width: 500px;
+	text-align: center;
+}
+
+.input_button_use {
+	padding: 0px;
+	border: none;
+	border-radius: 3px;
+	background-color: purple;
+	width: 19.5rem;
+	height: 40px;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
